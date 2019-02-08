@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"
-    <head>
+    < head>
         <title>Adventure Game</title> 
-    <head>
+    < head>
     <body>
         <h1>Adventure Game v1.0</h1>
         <p>Made by: Erika Kunz</p>
@@ -54,9 +54,33 @@ function Game() {
             }
         }
         else{
-                alert("I don't know what "+beach+" is!")
+                alert("I don't know what "+beach+" is!");
+                Beach();
+        if(beach == "go to opening" || beach == "go east"){
+            
+            var beachGotoopening = prompt("You walk through the opening in the trees, being greeted with an abandoned hut. To the east of the house, you see a mat at the door, with the word "Welcome" written on it, begging you to come in. \n -walk to the door.")
+            
+            else if (beach == "walk to the door" || beach == "go inside"){
+                alert("You walk to the door. As you step on the door mat, you fall, screaming as you descend. You fall for what seems like an eternity, hitting the dirt floor with a thud. Bruised and sore, you stand up")
+            }
         }
+        
+        else if(beach == "hut"){
+                Hut();
+        }
+        
+        else{
+                alert("I don't know what "+beach+" is.");
+                Beach();
+            }
+        }
+    
+    function Hut(){
+            var hutEnv = prompt("You look around and realize that you are in the basement of the hut. It looks as though you are in a trap to catch intruders or unannounced visitors.")
     }
+    
+    }
+    
     
     
     
