@@ -58,7 +58,7 @@ function Game() {
                 Beach();
         if(beach == "go to opening" || beach == "go east"){
             
-            var beachGotoopening = prompt("You walk through the opening in the trees, being greeted with an abandoned hut. To the east of the house, you see a mat at the door, with the word "Welcome" written on it, begging you to come in. \n -walk to the door.")
+            var beachGotoopening = prompt("You walk through the opening in the trees, being greeted with an abandoned hut. To the east of the house, you see a mat at the door, with the word WELCOME written on it, begging you to come in. \n -walk to the door.")
             
             else if (beach == "walk to the door" || beach == "go inside"){
                 alert("You walk to the door. As you step on the door mat, you fall, screaming as you descend. You fall for what seems like an eternity, hitting the dirt floor with a thud. Bruised and sore, you stand up")
@@ -76,7 +76,11 @@ function Game() {
         }
     
     function Hut(){
-            var hutEnv = prompt("You look around and realize that you are in the basement of the hut. It looks as though you are in a trap to catch intruders or unannounced visitors.")
+            var hutEnv = prompt("You look around and realize that you are in the basement of the hut. It looks as though you are in a trap to catch intruders or unannounced visitors. As you take in your surroundings, you notice the first step of a staircase in to the west of the basement. \n -go upstairs");
+        
+            if(hutEnv == "go upstairs" || hutEnv == "go up"){
+                var hutUpstairs = prompt("You get to the stairs and start your ascent. When you reach the top of the stairs you see a dinner table littered with the remains of their last meal, which are moldy and green. You walk around the room, taking in your surroundings. To the east, you see another set of stairs leading upwards to what seems like an attic. On the North wall you see the door, boarded up with slats of wood. On the East wall, there is a sword, hanging from a mount on the wall. Upom taking a closer look at the table, which sits on the West wall, you notice a small knob, poking out of the side. /n -twist the knob /n -go upstairs /n -take the sword " )
+            }
     }
     
     }
