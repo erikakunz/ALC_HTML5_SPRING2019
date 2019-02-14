@@ -79,12 +79,42 @@ function Game() {
             var hutEnv = prompt("You look around and realize that you are in the basement of the hut. It looks as though you are in a trap to catch intruders or unannounced visitors. As you take in your surroundings, you notice the first step of a staircase in to the west of the basement. \n -go upstairs");
         
             if(hutEnv == "go upstairs" || hutEnv == "go up"){
-                var hutUpstairs = prompt("You get to the stairs and start your ascent. When you reach the top of the stairs you see a dinner table littered with the remains of their last meal, which are moldy and green. You walk around the room, taking in your surroundings. To the east, you see another set of stairs leading upwards to what seems like an attic. On the North wall you see the door, boarded up with slats of wood. On the East wall, there is a sword, hanging from a mount on the wall. Upom taking a closer look at the table, which sits on the West wall, you notice a small knob, poking out of the side. /n -twist the knob /n -go upstairs /n -take the sword " )
+                var upstairsHut = prompt("You get to the stairs and start your ascent. When you reach the top of the stairs you see a dinner table littered with the remains of their last meal, which are moldy and green. You walk around the room, taking in your surroundings. To the east, you see another set of stairs leading upwards to what seems like an attic. On the North wall you see the door, boarded up with slats of wood. On the East wall, there is a sword, hanging from a mount on the wall. Upon taking a closer look at the table, which sits on the West wall, you notice a small knob, poking out of the side. - twist the knob - go upstairs - take sword" ).toLowerCase();
+                
+            switch(upstairsHut){
+                case "Upstairs" || "go upstairs":
+                        var upstairs = prompt("You walk up the stairs, being greeted by a dusty, cobwebb ridden attic. There is no furniture or belongings up here; Only the cobwebbs and a large window to the south of the attic. Upon looking around the room, you realize that the window will be your only way out of the hut. You check to see if the window will open. The latch flips up with a bit of force and the window swings open. You look out of the window and see that a rope ladder leads from the top of the windowsill to the ground below. /n - go out of the window");
+                    
+                        Hut(); 
+                break;
+                case "twist knob":
+                            alert("You twist the knob, hearing clicks with every millimeter it is moved. A minute passes and nothing has happened. You try to pull boards off of the table, trying to find the purpose of the knob. You turn back to the knob and twist it again, realizing it still had more to turn. You finish turing the knob as far as it would turn. The table started moving and twisting, the boards moving and finding new homes, forming a stand, leaving the old table non-existant. You look at the stand to see a pink jewel necklace resting in an indentation of the table, the perfect size for the jewel. You take the jewel necklace, stringing it around your neck for safe keeping.");
+                    
+                break;
+                case "take sword":
+                        alert("You take the sword off of the wall, finding that it comes with a holster in which you can strap around your waist. You look at the handle of the sword and notice picture engravings of eagles surrounding the handle. You put the holster on and fit the sword into it.");
+                break;
+                default:
+                        alert("I don't know what "+insideHut+" is!");
+                        hut();
+                break;
+                    
+            if(upstairsHut == "go out of the window" || upstairsHut == "go out"){
+                var outsideHut = prompt("You climb down the ladder, weighed down by the sword resting in the holster on your right side. When you reach the ground, you look around and take in your surroundings. A loud thump draws you out of your foccus on your surroundings. You whip around with your sword drawn, only to see the rope ladder had fallen, landing in a pile on the ground behind you. /n -look")
+            }
+                    else{
+                        alert("I don't know what"+outsideHut+"is!");
+                        outsideHut();
+                    }
+            if(outsideHut == "look" || outsideHut == "look around"){
+                var pathway = prompt("you look to the South, seeing only a tightly knit forrest with no ways of getting through. To the North, behind you, you are greeted with the pile of rope ladder. To the east, you are again greeted with thick forrestry. To the West, you see your only way out, a pathway, made of stones and lined with tropical flowers and plants. /n -continue following the path")
+            }
+            }
             }
     }
     
     }
-    
+}
     
     
     
