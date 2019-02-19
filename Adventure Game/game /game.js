@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"
-    < head>
-        <title>Adventure Game</title> 
-    < head>
-    <body>
-        <h1>Adventure Game v1.0</h1>
-        <p>Made by: Erika Kunz</p>
-        <script>
-            // javasript Object for an inventory
-            var inventory = {
+var inventory = {
                 coins: 0,
                 sword: 0,
                 map: 0,
@@ -20,11 +10,11 @@
                 compass: 0,
                 outfits: 0, 
                 foods: 0
-            }
+            
 
-
+// Start Game
 Game();
-
+}
 function Game() {
      
     alert("Shipwrecked");
@@ -79,7 +69,7 @@ function Game() {
             var hutEnv = prompt("You look around and realize that you are in the basement of the hut. It looks as though you are in a trap to catch intruders or unannounced visitors. As you take in your surroundings, you notice the first step of a staircase in to the west of the basement. \n -go upstairs");
         
             if(hutEnv == "go upstairs" || hutEnv == "go up"){
-                var upstairsHut = prompt("You get to the stairs and start your ascent. When you reach the top of the stairs you see a dinner table littered with the remains of their last meal, which are moldy and green. You walk around the room, taking in your surroundings. To the east, you see another set of stairs leading upwards to what seems like an attic. On the North wall you see the door, boarded up with slats of wood. On the East wall, there is a sword, hanging from a mount on the wall. Upon taking a closer look at the table, which sits on the West wall, you notice a small knob, poking out of the side. - twist the knob - go upstairs - take sword" ).toLowerCase();
+                var upstairsHut = prompt("You get to the stairs and start your ascent. When you reach the top of the stairs you see a dinner table littered with the remains of their last meal, which are moldy and green. You walk around the room, taking in your surroundings. To the east, you see another set of stairs leading upwards to what seems like an attic. On the North wall you see the door, boarded up with slats of wood. On the East wall, there is a sword, hanging from a mount on the wall. Upon taking a closer look at the table, which sits on the West wall, you notice a small knob, poking out of the side. - twist the knob - go upstairs - take sword" ).toLowerCase();}
                 
             switch(upstairsHut){
                 case "Upstairs" || "go upstairs":
@@ -100,20 +90,40 @@ function Game() {
                 break;
                     
             if(upstairsHut == "go out of the window" || upstairsHut == "go out"){
-                var outsideHut = prompt("You climb down the ladder, weighed down by the sword resting in the holster on your right side. When you reach the ground, you look around and take in your surroundings. A loud thump draws you out of your foccus on your surroundings. You whip around with your sword drawn, only to see the rope ladder had fallen, landing in a pile on the ground behind you. /n -look")
+                var outsideHut = prompt("You climb down the ladder, weighed down by the sword resting in the holster on your right side. When you reach the ground, you look around and take in your surroundings. A loud thump draws you out of your foccus on your surroundings. You whip around with your sword drawn, only to see the rope ladder had fallen, landing in a pile on the ground behind you. \n -look")
             }
                     else{
                         alert("I don't know what"+outsideHut+"is!");
                         outsideHut();
                     }
             if(outsideHut == "look" || outsideHut == "look around"){
-                var pathway = prompt("you look to the South, seeing only a tightly knit forrest with no ways of getting through. To the North, behind you, you are greeted with the pile of rope ladder. To the east, you are again greeted with thick forrestry. To the West, you see your only way out, a pathway, made of stones and lined with tropical flowers and plants. /n -continue following the path")
+                var pathway = prompt("You look to the South, seeing only a tightly knit forrest with no way of getting through. To the North, behind you, you are greeted with the pile of rope ladder. To the East, you are again, greeted with thick forrestry. To the West, you see your only way out, a pathway, made of stones and lined with tropical flowers and plants. /n -continue following the path")
             }
             }
             }
-    }
+            if(pathway == "continue following path" || pathway == "follow path"){
+                var pathway = prompt("You follow the rock pathway, taking in your surroundings as you go. As you walk along the pathway, you begin to hear the sounds of waves coming and going and the churning of the ocean. You follow the pathway South, the ocean sounds amplifying as you continue. You then come across a rocky platform. \n - look")
+            }
+            
+            if(pathway == "look" || pathway == "look around"){
+                var rocks = prompt("As you look around the rocky platform, greeted with a rock wall just taller than you, blocking your view of the beyond. At the base of the rock wall, you find a fishing pole, abandoned by those before you. \n - take fishing pole")
+                if(pathway == "take fishing pole" || pathway == "take pole")
+                    alert("You take the fishing pole and add it too your inventory.")
+                    
+            }
+            else {
+                alert("I dont know what"+pathway+"is!")
+                pathway();
+            }
+        var rocks = prompt("After taking the fishing pole, you decide to climb the rocks in order to get a better view of your surroundings. As you reach the top of the rocks, you see a rope coil resting on the ground. You pick it up and sling it around your shoulder. \n - look")
+        
+            if(rocks == "look" || rocks == "look around"){
+                alert("To the South and West, you see the ocean. Waves crash at the base of the rocks with immense amounts of power and strength. To the east you see a pathway, lined witht the forrest. And to the North is the pathway from which you came from. You look out on the waves with awe. You become entranced in its beauty and study the water's movements. Then you see a golden light, eminating from the middle of the waves")
+            }
+            
     
-    }
+    
+    
 }
     
     
