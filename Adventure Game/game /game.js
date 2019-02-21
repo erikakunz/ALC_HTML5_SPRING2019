@@ -115,14 +115,32 @@ function Game() {
                 alert("I dont know what"+pathway+"is!")
                 pathway();
             }
+    function Rocks(){
         var rocks = prompt("After taking the fishing pole, you decide to climb the rocks in order to get a better view of your surroundings. As you reach the top of the rocks, you see a rope coil resting on the ground. You pick it up and sling it around your shoulder. \n - look")
         
             if(rocks == "look" || rocks == "look around"){
-                alert("To the South and West, you see the ocean. Waves crash at the base of the rocks with immense amounts of power and strength. To the east you see a pathway, lined witht the forrest. And to the North is the pathway from which you came from. You look out on the waves with awe. You become entranced in its beauty and study the water's movements. Then you see a golden light, eminating from the middle of the waves")
+                var rocksEnv = prompt("To the South and West, you see the ocean. Waves crash at the base of the rocks with immense amounts of power and strength. To the east you see a pathway, lined with the forrest. And to the North is the pathway from which you came from. You look out on the waves with awe. You become entranced in its beauty and study the water's movements. Then you see a golden light, eminating from the middle of the waves \n - follow the light \n - follow the pathway")
+                
+                if(rocksEnv == "follow the light"){
+                    alert("You follow the yellow light shining from the sea. At the edge of the rock's platform where earth meets the sea, a large wave comes barreling towards you. With no time to run, the wave grows closer, the yellow light growing in size with it. The wave greets you with open arms and takes you to the ocean where you are engulfed in the wicked waves of the sea.")
+                    alert("Game Over.");
+                }
+                else if(rocksEnv == "follow the pathway" || rocksEnv == "follow path"){
+                    var rocksEnv = prompt("You follow the tree lined path East, the trees and shrubbery thickening as you go. After a while of walking, you come across a cave, eanding the pathway. The opening of the cave is shaped and detailed in the shape of a large skull. You cannot enter the cave for the mouth is the entrance, but it is much too high for you to climb. You notice a golden handle at the base of jaw, and an idea hits you. \n - hook the handle with the fishing pole")
+                }
+                if(rocksEnv == "hook the handle with the fishing pole"){
+                    alert("You throw the line out towards the handle on the jaw. You miss the first and second time, but third time's a charm! Upon hooking the line on the handle, you pull the line tight and reel with all of your strength. As you reel, the jaw of the skull begins to lower, opening the mouth. The skull creaks with the sudden movement after what looks like, ages of inactivity. Finally, the jaw bone reaches the ground and welcomes you in.");
+                }
             }
+                else{
+                        alert("I don't understand what"+rocksEnv+"is!")
+                }
             
-    
-    
+            
+    }
+   function Skullcave(){
+        var skullcaveEnv = prompt("You enter the mouth of the cave and look around. The cave path leads you towards to North where you are met with three different options. Three different doors appear; one with a blue gem painted on the door on the very west of the cave. The door in the middle is gold with a peep hole in which you can see into. You see a yellow light emminating through the peep hole that looks identical to the one from the ocean. Lastly, as you look to the door on the far east, you see that there are many padlocks on it, keeping you from entering.")
+   } 
     
 }
     
