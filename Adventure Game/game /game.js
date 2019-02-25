@@ -64,7 +64,7 @@ function Game() {
                 Beach();
             }
         }
-    
+    }
     function Hut(){
             var hutEnv = prompt("You look around and realize that you are in the basement of the hut. It looks as though you are in a trap to catch intruders or unannounced visitors. As you take in your surroundings, you notice the first step of a staircase in to the west of the basement. \n -go upstairs");
         
@@ -101,6 +101,7 @@ function Game() {
             }
             }
             }
+    function pathway(){
             if(pathway == "continue following path" || pathway == "follow path"){
                 var pathway = prompt("You follow the rock pathway, taking in your surroundings as you go. As you walk along the pathway, you begin to hear the sounds of waves coming and going and the churning of the ocean. You follow the pathway South, the ocean sounds amplifying as you continue. You then come across a rocky platform. \n - look")
             }
@@ -115,6 +116,7 @@ function Game() {
                 alert("I dont know what"+pathway+"is!")
                 pathway();
             }
+    }
     function Rocks(){
         var rocks = prompt("After taking the fishing pole, you decide to climb the rocks in order to get a better view of your surroundings. As you reach the top of the rocks, you see a rope coil resting on the ground. You pick it up and sling it around your shoulder. \n - look")
         
@@ -139,7 +141,16 @@ function Game() {
             
     }
    function Skullcave(){
-        var skullcaveEnv = prompt("You enter the mouth of the cave and look around. The cave path leads you towards to North where you are met with three different options. Three different doors appear; one with a blue gem painted on the door on the very west of the cave. The door in the middle is gold with a peep hole in which you can see into. You see a yellow light emminating through the peep hole that looks identical to the one from the ocean. Lastly, as you look to the door on the far east, you see that there are many padlocks on it, keeping you from entering.")
+        var skullcaveEnv = prompt("You enter the mouth of the cave and look around. The cave path leads you towards to North where you are met with three different options. Three different doors appear; one with a blue gem painted on the door on the very west of the cave. The door in the middle is gold with a peep hole in which you can see into. You see a yellow light emminating through the peep hole that looks identical to the one from the ocean. Lastly, as you look to the door on the far east, you see that there are many padlocks on it, keeping you from entering. \n - go through the blue gem door \n - go through the gold door")
+        
+            if(skullcaveEnv == "go through the blue gem door" || skullcaveEnv == "go through the west door"){
+                var skullcaveEnv = prompt("You twist the knob on the door with the blue gem painted on it. As you push the door open, it creaks with the sudden movement. You walk into the room, which is immediately lit up with torches lining the walls at the sense of your movement. As you look around the room, taking in your surroundings, you find an old, wooden table in the center of the room. Upon taking a closer look at the contents on the table, you find a gauntlet filled to the rim with pink shimmering liquid, an empty vile, and a blue jewel necklace, identical to the pink necklace you found in the beginning. You pour the pink liquid into the vile and stuff it in your pocket for safe keepimg. \n - take the blue necklace")
+                
+                if(skullcaveEnv == "take the blue necklace" || skullcaveEnv == "take the necklace"){
+                    alert("You take the blue gem necklace and rest it around your neck next to the pink necklace. You then tuck them under your shirt so keep them out of the way and protected from scuffs and marks");
+                }
+                else if(skullcaveEnv == "go through the gold door" || skullcaveEnv == "go through the middle door")
+            }
    } 
     
 }
