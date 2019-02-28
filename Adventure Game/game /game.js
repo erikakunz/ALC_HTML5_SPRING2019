@@ -125,7 +125,7 @@ function Game() {
                 
                 if(rocksEnv == "follow the light"){
                     alert("You follow the yellow light shining from the sea. At the edge of the rock's platform where earth meets the sea, a large wave comes barreling towards you. With no time to run, the wave grows closer, the yellow light growing in size with it. The wave greets you with open arms and takes you to the ocean where you are engulfed in the wicked waves of the sea.")
-                    alert("Game Over.");
+                    alert("Game Over!");
                 }
                 else if(rocksEnv == "follow the pathway" || rocksEnv == "follow path"){
                     var rocksEnv = prompt("You follow the tree lined path East, the trees and shrubbery thickening as you go. After a while of walking, you come across a cave, eanding the pathway. The opening of the cave is shaped and detailed in the shape of a large skull. You cannot enter the cave for the mouth is the entrance, but it is much too high for you to climb. You notice a golden handle at the base of jaw, and an idea hits you. \n - hook the handle with the fishing pole")
@@ -144,13 +144,28 @@ function Game() {
         var skullcaveEnv = prompt("You enter the mouth of the cave and look around. The cave path leads you towards to North where you are met with three different options. Three different doors appear; one with a blue gem painted on the door on the very west of the cave. The door in the middle is gold with a peep hole in which you can see into. You see a yellow light emminating through the peep hole that looks identical to the one from the ocean. Lastly, as you look to the door on the far east, you see that there are many padlocks on it, keeping you from entering. \n - go through the blue gem door \n - go through the gold door")
         
             if(skullcaveEnv == "go through the blue gem door" || skullcaveEnv == "go through the west door"){
-                var skullcaveEnv = prompt("You twist the knob on the door with the blue gem painted on it. As you push the door open, it creaks with the sudden movement. You walk into the room, which is immediately lit up with torches lining the walls at the sense of your movement. As you look around the room, taking in your surroundings, you find an old, wooden table in the center of the room. Upon taking a closer look at the contents on the table, you find a gauntlet filled to the rim with pink shimmering liquid, an empty vile, and a blue jewel necklace, identical to the pink necklace you found in the beginning. You pour the pink liquid into the vile and stuff it in your pocket for safe keepimg. \n - take the blue necklace")
+                var skullcaveEnv = prompt("You twist the knob on the door with the blue gem painted on it. As you push the door open, it creaks with the sudden movement. You walk into the room, which is immediately lit up with torches lining the walls at the sense of your movement. As you look around the room, taking in your surroundings, you find an old, wooden table in the center of the room. Upon taking a closer look at the contents on the table, you find a gauntlet filled to the rim with pink shimmering liquid, an empty vile, and a blue jewel necklace, identical to the pink necklace you found in the beginning. You pour the pink liquid into the vile and stuff it in your pocket for safe keeping. \n - take the blue necklace")
                 
                 if(skullcaveEnv == "take the blue necklace" || skullcaveEnv == "take the necklace"){
                     alert("You take the blue gem necklace and rest it around your neck next to the pink necklace. You then tuck them under your shirt so keep them out of the way and protected from scuffs and marks");
                 }
-                else if(skullcaveEnv == "go through the gold door" || skullcaveEnv == "go through the middle door")
+                else if(skullcaveEnv == "go through the gold door" || skullcaveEnv == "go through the middle door"){
+                    var skullcaveEnv = prompt("You walk to the middle door, pushing it open with much difficulty. The door seemed to be solide gold. As you walk in, you look around the room, taking note of your surroundings as you go. On the North wall, you see the yellow light, hiding behind a sheer curtain. The light looks similair to the one from the ocean, trying to reel you into death. On the East side of the wall, you find a hook with a ring of keys. Your thoughts wander back to the door with all of the padlocks. \n - take the keys \n - go to the yellow light")
+                }
             }
+            if(skullcaveEnv == "go to the yellow light" || skullcaveEnv == "look at the yellow light") {
+                alert("You walk up to the yellow light, pulling the curtain away as you near the light. You look into the light and you are met with the ocean from earlier. The light draws you closer to the waves and takes you hostage.")
+                alert("Game Over!");
+            }
+            else if(skullcaveEnv == "take the keys"){
+                var skullcaveEnv = prompt("You take the keys off of the hook stringing them around your neck with the gems. You leave the golden door room and walk out into the passageway. The padlocked door is the last door left for you to open. \n - unlock the padlocked door")
+            }
+            else{
+                alert("I don't udnerstand what "+skullcaveEnv+"is.")
+            }
+       if(skullcaveEnv == "unlock the padlocked door"){
+           var skullcaveEnv = prompt("You unlock each of the seven locks, growing more excited as you near the end. Finally you've unlocked all of the locks, enabling you to open the door. You push the door open with all of your might, creating dust clouds as you do so. As you look through the door way, you are greeted with another pathway. \n - follow the path")
+       }
    } 
     
 }
