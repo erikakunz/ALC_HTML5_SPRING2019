@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<canvas id="myCanvas" width="800" height="600"
+style="border:1px solid #F16998;">
+</canvas>
+<script>
+        // Setup Canvas
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        // Draw Rectangle
+        ctx.fillStyle = "#F16998";
+        ctx.fillRect(150, 50, 500, 500);
+        // Draws a Line
+        ctx.beginPath();
+        ctx.moveTo(100,50);
+        ctx.lineTo(180, 100);
+        ctx.strokeStyle = "0407FA";
+        ctx.stroke();
+        //Draw Circle with Gradient
+                var x = 400, y = 300,
+                // Radii of the white glow
+                innderRadius = 8,
+                outerRadius = 95,
+                // Radius of the entire circle.
+                radius = 100;
+    
+                var gradient = ctx.createRadialGradient(x, y, innderRadius, x, y, outerRadius);
+                gradient.addColorStop(0, 'white');
+                gradient.addColorStop(1, '#C5DFEF');
+    
+                ctx.arc(x, y, radius, 0, 2 * Math.PI);
+                
+                ctx.fillStyle = gradient;
+                ctx.fill();
+    
+</script>
+</body>
+</html>
