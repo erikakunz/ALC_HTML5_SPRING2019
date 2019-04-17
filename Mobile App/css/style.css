@@ -1,1 +1,56 @@
-/* Stylesheet for Mobile app */
+/* Reset */
+html,body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6 
+{
+    margin:0;
+    padding:0;
+    }
+
+body{
+    background-color: cornflowerblue;
+}
+
+div#container{
+    width:1200px;
+    height:800px;
+    border:3px solid crimson;
+    background-color:aliceblue;
+}
+
+header{
+    width:91.7%;
+    padding:50px;
+    background-color:floralwhite;
+    
+}
+
+header h1{
+    font-family:"neon80s",monospace;
+    font-size:55px;
+    color:darkblue;
+    margin-left:375px; 
+    
+}
+
+div#content{
+    width:100%;
+    background-color: darkred;
+    font-family:"neon80s", monospace;
+    font-size: 30px;
+    color:aliceblue;
+}
+
+nav{
+    background-color:#b9e4f1;
+    color:ghostwhite; 
+    font-family:"neon80s", monospace;
+    font-size: 25px;
+    
+}
+footer{
+    width:100%;
+    height:50px;
+    background-color:darkblue;
+    font-family: "neon80s", monospace;
+    color:aliceblue;
+    font-size: 25px
+}
