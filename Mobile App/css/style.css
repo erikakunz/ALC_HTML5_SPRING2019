@@ -1,3 +1,16 @@
+/* Google Fonts
+
+
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Acme', sans-serif;
+
+    font-family: 'Exo', sans-serif;
+
+    font-family: 'Righteous', cursive;
+
+*/
+
 /* Reset */
 html,body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6 
 {
@@ -24,7 +37,7 @@ header{
 }
 
 header h1{
-    font-family:"neon80s",monospace;
+    font-family: 'Lobster', cursive;
     font-size:55px;
     color:darkblue;
     margin-left:375px; 
@@ -42,9 +55,25 @@ div#content{
 nav{
     background-color:#b9e4f1;
     color:ghostwhite; 
-    font-family:"neon80s", monospace;
+    font-family: "neon80s", monospace;
     font-size: 25px;
     
+}
+
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    float:left; 
+    padding:5px 87;
+    border-right: 1px inset #fff;
+}
+nav ul li a{
+    color:ghostwhite;
+    text-decoration:none;
+}
+nav ul li a:hover{
+    font-weight:900;
 }
 footer{
     width:100%;
@@ -53,4 +82,7 @@ footer{
     font-family: "neon80s", monospace;
     color:aliceblue;
     font-size: 25px
+}
+div.keepOpen{
+    clear: both;
 }
