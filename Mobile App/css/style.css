@@ -25,14 +25,14 @@ body{
 div#container{
     width:100%;
     
-    border:3px solid crimson;
-    background-color:aliceblue;
+    border:3px solid #dee5f4;
+    background-color:#e3daf1;
 }
 
 header{
     width:93.4%;
     padding:40px;
-    background-color:floralwhite;
+    background-color:white;
     
 }
 
@@ -46,12 +46,12 @@ header h1{
 
 div#content{
     width:100%;
-    background-color: darkred;
+    background-color: #e3daf1;
     font-family:"neon80s", monospace;
     font-size: 30px;
-    color:aliceblue;
+    color:white;
 }
-
+/*
 nav{
     background-color:#b9e4f1;
     color:ghostwhite; 
@@ -77,6 +77,32 @@ nav ul li a{
 nav ul li a:hover{
     font-weight:900;
 }
+*/
+.icon-bar {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color: #95cff6;
+    overflow: auto;
+}
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 30px;
+}
+.icon-bar a:hover {
+    color:#dee5f4;
+}
+.active {
+    background-color: #a8d7f6;
+}
+
+/*
 footer{
     position:absolute;
     bottom:0;
@@ -100,4 +126,4 @@ div.keepOpen{
         float:none;
         text-align: center;
     }
-}
+}*/
