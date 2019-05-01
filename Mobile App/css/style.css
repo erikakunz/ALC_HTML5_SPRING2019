@@ -31,16 +31,22 @@ div#container{
 
 header{
     width:93.4%;
-    padding:40px;
+    padding:32px;
     background-color:white;
     
+}
+header img#slimysnail{
+    display: block;
+    margin:auto;
+    width:100px;
 }
 
 header h1{
     font-family: 'Lobster', cursive;
+    text-align:center;
     font-size:55px;
     color:darkblue;
-    margin-left:375px; 
+     
     
 }
 
