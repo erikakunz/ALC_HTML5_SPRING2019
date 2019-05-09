@@ -24,7 +24,6 @@ body{
 
 div#container{
     width:100%;
-    
     border:3px solid #dee5f4;
     background-color:#e3daf1;
 }
@@ -40,10 +39,25 @@ header img#slimysnail{
     margin:auto;
     width:150px;
 }
-div#content img#eyeball{
-    display:block;
+div#content img#Eyeball{
+    display: block;
     padding: 15;
     width: 100px;
+}
+div#content img#eyeballbackground{
+    display: block;
+    padding: 15px;
+    width: 100;
+}
+div#content img#shoppageeyeball{
+    display:block;
+    padding: 15px;
+    width: 100px; 
+}
+div#content img#slimy-shop-sticker{
+    display:block;
+    padding: 15px;
+    width: 150px;
 }
 
 header h1{
@@ -89,7 +103,7 @@ nav ul li a:hover{
 }
 */
 .icon-bar {
-    position:absolute;
+    position:fixed;
     bottom:0;
     left:0;
     width:100%;
@@ -137,3 +151,30 @@ div.keepOpen{
         text-align: center;
     }
 }*/
+
+div#item_grp{
+    width:auto;
+    margin: auto;
+}
+figure.item{
+    float:left;
+    width:100px;
+}
+
+figure.item img#eyeballbackground{
+    display:block;
+    border:2px white solid;
+}
+figure.item img#shoppageeyeball{
+    display:block;
+    border: 2px white solid;
+}
+figure.item img#slimy-shop-sticker{
+    display: block;
+    border: 2px white solid;
+}
+figure.item figcaption{
+    color: white;
+    font-size:15px;
+    text-align: center;
+}
