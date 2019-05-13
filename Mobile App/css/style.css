@@ -47,7 +47,7 @@ div#content img#Eyeball{
 div#content img#eyeballbackground{
     display: block;
     padding: 15px;
-    width: 100;
+    width: 100px;
 }
 div#content img#shoppageeyeball{
     display:block;
@@ -58,6 +58,26 @@ div#content img#slimy-shop-sticker{
     display:block;
     padding: 15px;
     width: 150px;
+}
+div#content img#new-eyeball{
+    display: block;
+    padding: 15px;
+    width: 100px;
+}
+div#content img#new-ogeyeball{
+    display: block;
+    padding: 15px;
+    width: 100px;
+}
+div#content img#new-slimysnail{
+    display: block;
+    padding: 15px;
+    width: 150px;
+}
+div#content img#search-slimysnail{
+    display: block;
+    padding: 15px;
+    width:150px;
 }
 
 header h1{
@@ -173,8 +193,40 @@ figure.item img#slimy-shop-sticker{
     display: block;
     border: 2px white solid;
 }
+figure.item img#new-eyeball{
+    display: block;
+    border: 2px white solid;
+}
+figure.item img#new-ogeyeball{
+    display: block;
+    border: 2px white solid;
+}
+figure.item img#new-slimysnail{
+    display: block;
+    border: 2px white solid;
+}
+figure.item img#search-slimysnail{
+    display: block;
+    border: 2px white solid;
+}
 figure.item figcaption{
     color: white;
-    font-size:15px;
+    font-size: 15px;
     text-align: center;
+}
+@media screen and (max-width: 600px) {
+    figure.item{
+        float:none;
+        margin:10px auto;
+        min-width: 50%;
+        max-width:100%;
+        border-radius: 5%;
+    }
+    figure.item figcaption{
+        text-align: center;
+        color:white;
+        font-family:'Lobster', cursive;
+        font-size: 15px;
+    }
+    
 }
