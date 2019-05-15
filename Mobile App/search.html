@@ -15,10 +15,35 @@
                 <h1>Slimy Snail Stickers</h1>
             </header>
             <div id="content">
-                <h3>Search</h3>
-                <figure class="item">
-                <img src="img/slimy%20snail%20sticker.jpg" alt="slimysnaillogo" id="search-slimysnail">
-                </figure>
+                <h3>Search Menu</h3>
+                <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search..." title="Type in a category">
+                <ul id="myMenu">
+    
+       <script>
+           function myFunction() {
+            var input, filter, ul, li, a, i;
+               input = document.getElementById("mySearch");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myMenu");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                } else {
+                li[i].style.display = "none";
+    }
+  }
+}
+</script>             
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="shop.html">Eyeball</a></li>
+                    <li><a href="shop.html">Eyeball OG</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="newItems.html">New</a></li>
+                    <li><a href="shop.html">Products</a></li>
+                    <li><a href="shop.html">Snail Logo</a></li>
+                </ul>
             
             </div>
             <div class="icon-bar">

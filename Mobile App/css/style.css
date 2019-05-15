@@ -74,11 +74,6 @@ div#content img#new-slimysnail{
     padding: 15px;
     width: 150px;
 }
-div#content img#search-slimysnail{
-    display: block;
-    padding: 15px;
-    width:150px;
-}
 
 header h1{
     font-family: 'Lobster', cursive;
@@ -144,6 +139,32 @@ nav ul li a:hover{
 }
 .active {
     background-color: #a8d7f6;
+}
+/*css search bar style*/
+
+#mySearch {
+    width:100%;
+    font-size: 20px;
+    padding: 11px;
+    border: 1px solid white;
+    font-family: 'neon 80s', monospace;
+    color: darkblue; 
+}
+/* navigation menu style search*/
+#myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* navigation links search bar*/
+#myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: #f1f6ff;
+    display: block;
+}
+#myMenu li a:hover{
+    color:#fff;
 }
 
 /*
@@ -228,5 +249,12 @@ figure.item figcaption{
         font-family:'Lobster', cursive;
         font-size: 15px;
     }
-    
+    legend, span, input, textarea{
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-family: 'neon 80s', monospace;
+        color: white;
+        border: 2px solid white; 
+    }
 }
